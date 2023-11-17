@@ -40,9 +40,15 @@ header .info-text{
 }
 
 header .info-text h1{
+    color: #fff;
     font-size: 5rem;
     font-weight: 500;
     font-family: 'Ubuntu';
+}
+
+header .info-text h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
 }
 
 header .info-text h3{
@@ -88,25 +94,25 @@ header .info-text .scroll::before{
     }
 }
 
-#about, #features{
+#about, #features, #learn, #projects{
     background-color: #2b2f4b;
     padding: 40px;
 }
 
-#about .header, #features .header{
+#about .header, #features .header, #learn .header, #projects .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
 }
 
-#about .header h1, #features .header h1{
+#about .header h1, #features .header h1, #learn .header h1, #projects .header h1{
     text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
 
-#about .header a, #features .header a{
+#about .header a, #features .header a, #learn .header a, #projects .header a{
     text-decoration: none;
     font-size: 1.3em;
     color: #fff;
@@ -117,12 +123,12 @@ header .info-text .scroll::before{
     transition: all 0.3s ease;
 }
 
-#about .header a:hover, #features .header a:hover{
+#about .header a:hover, #features .header a:hover, #learn .header a:hover, #projects .header a:hover{
     border-color: #fff;
     box-shadow: none;
 }
 
-#about .card, #features .card{
+#about .card, #features .card, #learn .card, #projects .card{
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 20px;
@@ -132,7 +138,7 @@ header .info-text .scroll::before{
     transition: all 0.3s ease;
 }
 
-#about .card:hover, #features .card:hover{
+#about .card:hover, #features .card:hover, #learn .card:hover, #projects .card:hover{
     border-color: #fff;
     box-shadow: none;
 }
@@ -149,7 +155,7 @@ header .info-text .scroll::before{
     justify-content: center;
 }
 
-#about .card .info h1, #features .card .info h1{
+#about .card .info h1, #features .card .info h1, #learn .card .info h1, #projects .card .info h1{
     margin-bottom: 20px;
     color: #fff;
     font-size: 1.7rem;
@@ -157,7 +163,68 @@ header .info-text .scroll::before{
     font-family: 'Ubuntu';
 }
 
-#about .card .info p, #features .card .info p{
+#about .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#about .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+#about .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+#about .image{
+    position: relative;
+}
+
+#about .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+#about .image img{
+    max-width: 500px;
+    max-height: 200px;
+    margin: auto;
+}
+
+#about .about-scroll {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+  
+#about .bx.bxs-down-arrow {
+    font-size: 36px;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+#about .about-scroll:hover .bx.bxs-down-arrow {
+    color: #e74c3c;
+}
+  
+#about .card .info p, #features .card .info p,  #learn .card .info p, #projects .card .info p{
     color: #ccc;
     font-size: 1.1rem;
     line-height: 1.8rem;
@@ -192,6 +259,139 @@ header .info-text .scroll::before{
 
 #features .feature-cards .card .info p{
     font-size: 1.1rem;
+}
+
+#features .features-scroll {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+  
+#features .bx.bxs-down-arrow {
+    font-size: 36px;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+#features .features-scroll:hover .bx.bxs-down-arrow {
+    color: #e74c3c;
+}
+
+#learn .learn-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#learn .learn-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 350px;
+}
+
+#learn .learn-cards .card .info i{
+    color: #fff;
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+#learn .learn-cards .card .info h1{
+    text-align: center;
+}
+
+#learn .learn-cards .card .info p{
+    font-size: 1.1rem;
+}
+
+#learn .learn-scroll {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+  
+#learn .bx.bxs-down-arrow {
+    font-size: 36px;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+#learn .learn-scroll:hover .bx.bxs-down-arrow {
+    color: #e74c3c;
+}
+
+#projects .projects-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#projects .projects-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 350px;
+}
+
+#projects .projects-cards .card .info i{
+    color: #fff;
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+#projects .projects-cards .card .info h1{
+    text-align: center;
+}
+
+#projects .projects-cards .card .info p{
+    font-size: 1.1rem;
+}
+
+#projects .projects-cards .card .info p a{
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+#projects .projects-cards .card .info p a:hover{
+    color: #e74c3c;
+}
+
+footer {
+    background-color: #2b2f4b;
+    padding: 20px;
+    text-align: center;
+}
+  
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+  
+.social-icons i {
+    font-size: 50px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fff;
 }
 
 .scroll-top{

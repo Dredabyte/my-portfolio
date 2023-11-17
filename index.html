@@ -1,106 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
-  </head>
 
-  <body>
-    <header>
-      <div id="particles"></div>
-      <div class="info-text">
-        <h1><i>Hi!</i></h1>
-        <h1><i>I'm </i>Aeldred John</h1>
-        <h3>A Developer from Scratch</h3>
-        <a href="#about" class="scroll"><i class="bx bxs-down-arrow"></i></a>
-        <h3 id="element"></h3>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>My Portfolio</title>
+</head>
 
-    <section id="about">
-      <div class="header">
-        <h1>About Me</h1>
-        <a href="#">Hire Me</a>
-      </div>
+<body>
 
-      <div class="card">
-        <img src="assets/logo.png" />
-        <div class="info">
-          <h1>About ME</h1>
+  <header>
+    <div id="particles"></div>
+    <div class="header">
+    </div>
+    <div class="info-text">
+      <h1>Hey! It's <span>Aeldred John</span></h1>
+      <h1>I'm a <span id="element1"></span></h1>
+      <h3><span id="element2"></span></h3>
+      <a href="#about" class="scroll"><i class="bx bxs-down-arrow"></i></a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="header">
+      <h1>About Me</h1>
+    </div>
+
+    <div class="card">
+      <img src="assets/profile.png" alt="Profile" />
+      <div class="info">
+        <div class="content">
+          <span class="blur"></span>
+          <span class="blur"></span>
+          <h4>CREATE YOUR SITE LIKE A PRO</h4>
+          <h1>Hi, I'm <span>Aeldred John</span>, Web Developer</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            voluptates error in dolorum dolor rerum reiciendis consequuntur
-            tenetur maxime.
+            Hello, I'm Aeldred John Y. Tañahura, Web Developer extraordinaire, paving the path for aspiring developers delving into the realms of CSS, HTML, and JavaScript—where coding dreams take flight.
+          </p>
+          <br/>
+          <p>
+            "Explore the Depths of Who I Am with a Glimpse Below: 😊 #GetToKnowMe #DiscoverMore"</p>
+        </div>
+        <div class="image" alt="Some Photo">
+          <img src="assets/header.png">
+        </div>
+      </div>
+    </div>
+    <a href="#features" class="about-scroll"><i class="bx bxs-down-arrow"></i></a>
+  </section>
+
+  <section id="features">
+    <div class="header">
+      <h1>Features</h1>
+    </div>
+    <div class="feature-cards">
+      <div class="card">
+        <div class="info">
+          <i class="bx bxs-devices"></i>
+          <h1>Responsive Design</h1>
+          <p>
+            Explore a diverse collection of my creative endeavors, including
+            web design, javascript and mini projects. Each project showcases
+            my creativity, attention to detail, and passion for delivering
+            visually stunning and engaging experiences.
           </p>
         </div>
       </div>
-    </section>
+      <div class="card">
+        <div class="info">
+          <i class="bx bx-code-alt"></i>
 
-    <section id="features">
-      <div class="header">
-        <h1>Features</h1>
-        <a href="#">See More</a>
-      </div>
-      <div class="feature-cards">
-        <div class="card">
-          <div class="info">
-            <i class="bx bxs-devices"></i>
-            <h1>Responsive Design</h1>
-            <p>
-              Explore a diverse collection of my creative endeavors, including
-              web design, javascript and mini projects. Each project showcases
-              my creativity, attention to detail, and passion for delivering
-              visually stunning and engaging experiences.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="info">
-            <i class="bx bx-code-alt"></i>
-
-            <h1>Creative Projects</h1>
-            <p>
-              Behind the scenes, I pride myself on writing clean, efficient, and
-              maintainable code. Learn more about my coding standards and
-              practices that contribute to the functionality and performance of
-              the projects I undertake.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="info">
-            <i class="bx bxs-component"></i>
-            <h1>Code Quality</h1>
-            <p>
-              Behind the scenes, I pride myself on writing clean, efficient, and
-              maintainable code. Learn more about my coding standards and
-              practices that contribute to the functionality and performance of
-              the projects I undertake.
-            </p>
-          </div>
+          <h1>Creative Projects</h1>
+          <p>
+            Behind the scenes, I pride myself on writing clean, efficient, and
+            maintainable code. Learn more about my coding standards and
+            practices that contribute to the functionality and performance of
+            the projects I undertake.
+          </p>
         </div>
       </div>
-    </section>
+      <div class="card">
+        <div class="info">
+          <i class="bx bxs-component"></i>
+          <h1>Code Quality</h1>
+          <p>
+            Behind the scenes, I pride myself on writing clean, efficient, and
+            maintainable code. Learn more about my coding standards and
+            practices that contribute to the functionality and performance of
+            the projects I undertake.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="#learn" class="features-scroll"><i class="bx bxs-down-arrow"></i></a>
+  </section>
 
-    <button class="scroll-top" onclick="scrollToTop()">
-      <i class="bx bxs-up-arrow"></i>
-    </button>
+  <section id="learn">
+    <div class="header">
+      <h1>Programming Languages</h1>
+    </div>
+    <div class="learn-cards">
+      <div class="card">
+        <div class="info">
+          <i class='bx bxl-html5'></i>
+          <h1>HTML5</h1>
+          <p>
+            I harness the capabilities of HTML5 to meticulously design 
+            and develop my portfolio. This cutting-edge technology allows 
+            me to showcase my skills and achievements dynamically, creating an
+            immersive and captivating experience for visitors.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <i class='bx bxl-css3' ></i>
+
+          <h1>CSSS3</h1>
+          <p>
+            With the finesse of CSS3, I elevate my portfolio's aesthetics, 
+            applying modern styling techniques. Transitions, animations, and 
+            responsive design converge to create a visually stunning showcase 
+            of my work and capabilities.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <i class='bx bxl-javascript' ></i>
+          <h1>javascript</h1>
+          <p>
+            JavaScript amplifies my portfolio's interactivity and functionality. 
+            Through dynamic features, seamless user experiences, and client-side scripting, 
+            I bring my projects to life, showcasing a blend of creativity and technical prowess.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="#projects" class="learn-scroll"><i class="bx bxs-down-arrow"></i></a>
+  </section>
+
+  <section id="projects">
+    <div class="header">
+      <h1>My Projects</h1>
+    </div>
+    <div class="projects-cards">
+      <div class="card">
+        <div class="info">
+          <i class='bx bx-building-house'></i>
+          <h1>Item Management System</h1>
+          <p>
+            I engineered an efficient and user-friendly Item Management System, 
+            seamlessly streamlining inventory control, tracking, and organization. 
+            This bespoke solution empowers businesses with precision and ease in managing 
+            their valuable assets.
+          </p>
+          <br>
+          <p>
+            Here is the <a href="https://github.com/Dredabyte/item-management-system-capstone" target="_blank">link.</a>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <i class='bx bx-hotel'></i>
+          <h1>Hotel Reservation System</h1>
+          <p>    
+            I developed a sophisticated Hotel Reservation System, 
+            seamlessly integrating user-friendly interfaces with robust 
+            backend functionality. This system ensures a seamless booking experience, 
+            managing reservations and optimizing hotel operations with efficiency and precision.
+          </p>
+          <br>
+          <p>
+            Here is the <a href="https://github.com/Dredabyte/midway-minkay" target="_blank">link.</a>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <i class='bx bx-coffee'></i>
+          <h1>Coffee Shop Website</h1>
+          <p>
+            I crafted a vibrant and engaging Coffee Shop Website 
+            that not only captures the essence of your favorite brew but also
+            provides a delightful online experience. Explore our menu, ambiance, 
+            and more!
+          </p>
+          <br>
+          <p>
+            Here is the <a href="https://github.com/Dredabyte" target="_blank">link.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+      <a href="#" target="_blank"><i class='bx bxl-youtube' ></i></a>
+      <a href="#" target="_blank"><i class='bx bxl-discord'></i></a>
+      <a href="https://github.com/Dredabyte" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+    <p class="copyright">Copyright © 2023 Aeldred John. All Rights Reserved.</p>
+  </footer>
+
+  <button class="scroll-top" onclick="scrollToTop()">
+    <i class="bx bxs-up-arrow"></i>
+  </button>
 
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Lorem ipsum", ""],
-        typeSpeed: 50,
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element1', {
+      strings: ['Graphic Designer.', 'Web Developer.', 'Freelancer.',],
+      typeSpeed: 69,
+      backSpeed: 69,
+      loop: true
+    });
+
+    var typed = new Typed('#element2', {
+      strings: ['"Web Mastery Unleashed: Your Professional Presence Starts Here."',],
+      typeSpeed: 80,
+      loop: false
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
